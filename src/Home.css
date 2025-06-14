@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
+.home-container {
+  padding: 20px;
+  font-family: 'Noto Serif JP', serif;
+  text-align: center;
+  background-color: #fffdf6;
+  color: #2c2c2c;
+}
+
+.header {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #b03a2e;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.recipe-picking-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.pick-card {
+  width: 160px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, background-color 0.2s;
+}
+
+.pick-card:hover {
+  transform: scale(1.05);
+  background-color: #fceeee;
+}
+
+.pick-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+.pick-card p {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #a93226;
+}
+
+.recipe-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.recipe-card {
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #fafafa;
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.recipe-card ol {
+  padding-left: 20px;
+}
